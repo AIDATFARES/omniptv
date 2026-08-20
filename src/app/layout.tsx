@@ -30,11 +30,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.webp", type: "image/webp" },
-      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" },
     ],
-    shortcut: "/favicon.webp",
-    apple: "/favicon.webp",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "OmniPtv™ | #1 Premium 4K IPTV Provider",
