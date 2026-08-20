@@ -8,11 +8,13 @@ export default function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/hero-family-bg.png"
           alt="OmniPtv Background"
-          fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
+          priority
+          fill
+          sizes="100vw"
+          className="object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050607] via-[#050607]/40 to-[#050607]/10" />
       </div>
