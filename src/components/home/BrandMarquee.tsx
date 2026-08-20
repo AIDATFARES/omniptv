@@ -37,7 +37,7 @@ export default function BrandMarquee({
         {repeatList.map((brand, i) => (
           <div 
             key={i} 
-            className={cardClassName || "flex-shrink-0 w-[100px] h-[50px] md:w-[140px] md:h-[65px] relative glass-panel rounded-xl p-3 hover:bg-white/5 hover:scale-105 transition-all duration-300 shadow-md"}
+            className={cardClassName || "flex-shrink-0 w-[100px] h-[50px] md:w-[140px] md:h-[65px] relative bg-white rounded-xl p-3 hover:scale-105 transition-all duration-300 shadow-[0_4px_15px_rgba(255,90,47,0.1)] hover:shadow-[0_6px_20px_rgba(255,90,47,0.25)] border border-[#FF5A2F]/15"}
           >
             <div className="relative w-full h-full overflow-hidden rounded-xl">
               <Image 
