@@ -22,8 +22,8 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "OmniPtv - Premium 4K Streaming Services",
-  description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+  title: "OmniPtv™ | Best Premium 4K IPTV Subscription Service 2026",
+  description: "Experience the ultimate 4K IPTV streaming with OmniPtv. Get instant access to 50,000+ Live Channels, Premium Sports, and 120,000+ Movies & Series. No buffering, instant setup, 24/7 support. Start watching now!",
   metadataBase: new URL("https://www.omniptv4k.shop"),
   alternates: {
     canonical: "/",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     apple: "/favicon.webp",
   },
   openGraph: {
-    title: "OmniPtv - Premium 4K Streaming",
-    description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+    title: "OmniPtv™ | #1 Premium 4K IPTV Provider",
+    description: "Experience the ultimate 4K IPTV streaming with OmniPtv. Get instant access to 50,000+ Live Channels, Premium Sports, and 120,000+ Movies & Series. No buffering, instant setup, 24/7 support. Start watching now!",
     url: "https://www.omniptv4k.shop",
     siteName: "OmniPtv",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "OmniPtv Premium IPTV Service",
+        alt: "OmniPtv Premium 4K IPTV Service",
       },
     ],
     locale: "en_US",
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OmniPtv - Premium 4K Streaming",
-    description: "Ultimate 4K IPTV Experience. Access +50,000 Channels, +120,000 Films & Series, and 200,000+ VODs.",
+    title: "OmniPtv™ | Best Premium 4K IPTV Subscription",
+    description: "Get instant access to 50,000+ Live Channels, Premium Sports, and 120,000+ Movies & Series. No buffering, instant setup, 24/7 support.",
     images: ["/og-image.webp"],
   },
 };
