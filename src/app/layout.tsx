@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "OmniPtv",
     images: [
       {
-        url: "/og-image.webp",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "OmniPtv Premium 4K IPTV Service",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "OmniPtv™ | Best Premium 4K IPTV Subscription",
     description: "Get instant access to 50,000+ Live Channels, Premium Sports, and 120,000+ Movies & Series. No buffering, instant setup, 24/7 support.",
-    images: ["/og-image.webp"],
+    images: ["/og-image.png"],
   },
 };
 
