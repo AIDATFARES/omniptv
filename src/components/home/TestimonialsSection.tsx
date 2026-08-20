@@ -7,10 +7,10 @@ const reviewImages = [
   "3-3.webp",
   "4-2.webp",
   "1-2 (1).webp",
-  "Image01-e1736575288611.webp.webp",
-  "Image02-e1736575280733.webp.webp",
-  "Image03-e1736575270823.webp.webp",
-  "Image07-e1736575248206.webp.webp"
+  "Image01-e1736575288611.jpg.webp",
+  "Image02-e1736575280733.jpg.webp",
+  "Image03-e1736575270823.jpg.webp",
+  "Image07-e1736575248206.jpg.webp"
 ];
 
 const metrics = [
