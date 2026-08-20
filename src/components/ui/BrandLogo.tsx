@@ -5,7 +5,7 @@ export default function BrandLogo({ compact = false }: { compact?: boolean }) {
     <Image
       alt="OmniPtv"
       className={`block shrink-0 object-contain object-left drop-shadow-[0_2px_10px_rgba(255,90,47,0.2)] ${compact ? "h-11 w-32" : "h-16 w-48"}`}
-      src="/OmniPtv-new-logo-v2.webp"
+      src="/omniptv-logo.png"
       width={192}
       height={64}
       sizes="(max-width: 768px) 128px, 192px"
