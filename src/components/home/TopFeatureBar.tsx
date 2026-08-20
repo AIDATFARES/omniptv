@@ -40,7 +40,7 @@ export default function TopFeatureBar() {
   ];
 
   return (
-    <section className="bg-[#0c0f0f] border-y border-white/10 relative z-10">
+    <section className="bg-[#050607] border-y border-white/10 relative z-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 gap-8 border-b border-white/[0.08] py-10 text-center sm:grid-cols-4 sm:gap-4 sm:py-12">
           {stats.map((stat) => (
@@ -57,9 +57,9 @@ export default function TopFeatureBar() {
             return (
               <div
                 key={index}
-                className="bg-[#121414]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-red-500/40 transition-all duration-300 group"
+                className="bg-[#050607]/90 border border-white/10 rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 hover:border-[#FF5A2F]/40 transition-all duration-300 group"
               >
-                <div className="p-2.5 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 group-hover:scale-110 transition-transform shrink-0">
+                <div className="p-2.5 rounded-lg bg-[#FF5A2F]/10 border border-[#FF5A2F]/20 text-[#FF6A35] group-hover:scale-110 transition-transform shrink-0">
                   <Icon className="w-5 h-5" strokeWidth={2} />
                 </div>
                 <div className="min-w-0">

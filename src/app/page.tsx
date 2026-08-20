@@ -32,14 +32,14 @@ export default function Home() {
       <BrandMarquee 
         imagesFolder="dawryate" 
         images={["1235.webp", "1727368362913.webp", "1727368362933.webp", "1727368362971.webp", "ff25.webp"]}
-        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-[#141624] hover:border-[#d32f2f]/60 transition-all duration-300 group"
+        cardClassName="flex-shrink-0 w-[140px] h-[200px] md:w-[200px] md:h-[280px] relative rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-[#0d0f12] hover:border-[#FF5A2F]/60 transition-all duration-300 group"
         imageClassName="object-cover rounded-xl"
       />
 
       {/* Channel & Installation Quick Links */}
-      <div className="w-full bg-[#0c0f0f] py-6 px-4 text-center border-t border-white/5 relative z-20">
+      <div className="w-full bg-[#050607] py-6 px-4 text-center border-t border-white/5 relative z-20">
         <p className="text-center text-sm md:text-base text-stone-400 max-w-3xl mx-auto">
-          Find the comprehensive <Link prefetch={false} className="font-semibold text-[#d32f2f] hover:text-[#f44336]" href="/channels">IPTVDoor Channel List</Link> or navigate to our <Link prefetch={false} className="font-semibold text-[#d32f2f] hover:text-[#f44336]" href="/installation">IPTVDoor Installation Guide</Link> for a quick start.
+          Find the comprehensive <Link prefetch={false} className="font-semibold text-[#FF5A2F] hover:text-[#FF6A35]" href="/channels">OmniPtv Channel List</Link> or navigate to our <Link prefetch={false} className="font-semibold text-[#FF5A2F] hover:text-[#FF6A35]" href="/installation">OmniPtv Installation Guide</Link> for a quick start.
         </p>
       </div>
 

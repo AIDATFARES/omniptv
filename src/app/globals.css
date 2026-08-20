@@ -1,54 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-on-secondary-container: #c4abff;
-  --color-secondary-container: #571bc1;
-  --color-on-secondary-fixed-variant: #5516be;
-  --color-background: #10131a;
-  --color-on-secondary-fixed: #23005c;
-  --color-primary: #b8c3ff;
-  --color-on-primary-fixed-variant: #0035be;
-  --color-error: #ffb4ab;
-  --color-outline-variant: #434656;
-  --color-surface-container-lowest: #0b0e14;
-  --color-secondary: #d0bcff;
-  --color-on-primary: #002388;
-  --color-inverse-surface: #e1e2eb;
-  --color-surface-container-highest: #32353c;
-  --color-on-surface: #e1e2eb;
-  --color-tertiary: #00dce5;
-  --color-tertiary-fixed-dim: #00dce5;
-  --color-on-error-container: #ffdad6;
-  --color-on-primary-container: #efefff;
-  --color-error-container: #93000a;
-  --color-on-tertiary-container: #bbfbff;
-  --color-on-background: #e1e2eb;
-  --color-on-secondary: #3c0091;
-  --color-surface-container-high: #272a31;
-  --color-surface-bright: #363940;
-  --color-on-tertiary-fixed: #002021;
-  --color-inverse-primary: #124af0;
-  --color-surface-container-low: #191c22;
-  --color-tertiary-container: #00797e;
-  --color-tertiary-fixed: #63f7ff;
-  --color-primary-container: #2e5bff;
-  --color-inverse-on-surface: #2e3037;
-  --color-surface-container: #1d2026;
-  --color-surface-dim: #10131a;
-  --color-outline: #8e90a2;
-  --color-surface: #10131a;
-  --color-on-tertiary-fixed-variant: #004f53;
-  --color-surface-tint: #b8c3ff;
-  --color-on-error: #690005;
-  --color-on-tertiary: #003739;
-  --color-primary-fixed: #dde1ff;
-  --color-secondary-fixed: #e9ddff;
-  --color-on-surface-variant: #c4c5d9;
-  --color-surface-variant: #32353c;
-  --color-secondary-fixed-dim: #d0bcff;
-  --color-on-primary-fixed: #001356;
-  --color-primary-fixed-dim: #b8c3ff;
+  --color-background: #050607;
+  --color-on-background: #f8f9fa;
+  
+  --color-surface: #08090b;
+  --color-surface-dim: #050607;
+  --color-surface-bright: #0d0f12;
+  
+  --color-surface-container-lowest: #050607;
+  --color-surface-container-low: #08090b;
+  --color-surface-container: #0d0f12;
+  --color-surface-container-high: #111317;
+  --color-surface-container-highest: #15171b;
+  --color-on-surface: #f8f9fa;
+  --color-on-surface-variant: #a0a5b0;
+  
+  --color-primary: #ff5a2f;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ff6a35;
+  --color-on-primary-container: #ffffff;
+  
+  --color-secondary: #e83e59;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ff3d57;
+  --color-on-secondary-container: #ffffff;
+  
+  --color-outline: #333842;
+  --color-outline-variant: #1a1c21;
 
+  --color-error: #ff3d57;
+  --color-on-error: #ffffff;
+  --color-error-container: #5c0d17;
+  --color-on-error-container: #ffb3bc;
+  
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
@@ -112,50 +97,74 @@
 }
 
 @layer components {
+  /* Glass panel replacement: Dark cards with subtle border */
   .glass-panel {
-    background: rgba(30, 32, 32, 0.6);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(17, 19, 23, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 90, 47, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
   }
-  .text-glow {
-    text-shadow: 0 0 20px rgba(211, 47, 47, 0.3);
-  }
-  .btn-glow:hover {
-    box-shadow: 0 0 30px rgba(211, 47, 47, 0.5);
+  .glass-panel:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 90, 47, 0.3);
+    box-shadow: 0 8px 32px rgba(255, 90, 47, 0.15);
   }
 
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 90, 47, 0.4);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 8px 30px rgba(255, 80, 50, 0.25);
+  }
+
+  /* Primary CTA Buttons */
   .btn-primary-voltra {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #FF5A2F 0%, #E83E59 100%);
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.04em;
-    border-radius: var(--radius);
-    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.45);
+    border-radius: 9999px; /* pill shape */
+    box-shadow: 0 8px 30px rgba(255, 80, 50, 0.25);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-primary-voltra:hover {
-    box-shadow: 0 6px 30px rgba(16, 185, 129, 0.75);
-    transform: translateY(-2px);
+    box-shadow: 0 10px 35px rgba(255, 80, 50, 0.4);
+    transform: scale(1.02);
   }
   .btn-primary-voltra:active {
-    transform: translateY(0);
+    transform: scale(0.98);
   }
 
+  /* Secondary Buttons */
   .btn-secondary-voltra {
-    background: rgba(30, 32, 32, 0.7);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #e1e2eb;
+    background: transparent;
+    border: 1px solid #FF5A2F;
+    color: #ffffff;
     font-weight: 600;
-    border-radius: var(--radius);
+    border-radius: 9999px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .btn-secondary-voltra:hover {
-    border-color: rgba(255, 255, 255, 0.35);
-    color: #ffffff;
+    background: rgba(255, 90, 47, 0.1);
     transform: translateY(-2px);
+  }
+
+  /* Text Gradients */
+  .text-gradient-primary {
+    background: linear-gradient(90deg, #FF5A2F, #E83E59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-secondary {
+    background: linear-gradient(90deg, #FF6A35, #FF3D57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   /* -------------------------------------------------------------
@@ -181,10 +190,10 @@
   }
   .text-format-marketing mark,
   .text-format-marketing .text-highlight {
-    @apply bg-transparent text-red-500 font-extrabold;
+    @apply bg-transparent text-[#FF5A2F] font-extrabold;
   }
   .text-format-marketing .badge-text {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-red-500/30 bg-red-500/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-400;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-[#FF5A2F]/30 bg-[#FF5A2F]/10 px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#FF6A35];
   }
 
   /* 2. BLOG & EDITORIAL PAGES (Blog listing, Article detail) */
@@ -209,7 +218,7 @@
     @apply italic text-stone-200;
   }
   .text-format-blog a {
-    @apply text-red-400 font-medium underline underline-offset-4 decoration-red-500/40 hover:text-red-300 hover:decoration-red-400 transition-colors;
+    @apply text-[#FF5A2F] font-medium underline underline-offset-4 decoration-[#FF5A2F]/40 hover:text-[#FF6A35] hover:decoration-[#FF5A2F] transition-colors;
   }
 
   /* 3. TECHNICAL GUIDES & INSTALLATION PAGES */
@@ -227,11 +236,11 @@
   }
   .text-format-technical code,
   .text-format-technical pre {
-    @apply font-mono text-red-300 bg-[#161a23] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
+    @apply font-mono text-[#FF5A2F] bg-[#111317] px-2.5 py-1 rounded-md border border-white/10 text-xs sm:text-sm font-medium tracking-wide shadow-inner;
   }
   .text-format-technical strong,
   .text-format-technical b {
-    @apply font-bold text-white underline decoration-emerald-500/50 decoration-2 underline-offset-2;
+    @apply font-bold text-white underline decoration-[#E83E59]/50 decoration-2 underline-offset-2;
   }
 
   /* 4. LEGAL & POLICY DOCUMENTS */
@@ -239,7 +248,7 @@
     @apply font-black uppercase tracking-tight text-white text-3xl sm:text-4xl lg:text-5xl;
   }
   .text-format-legal h2 {
-    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-red-500 pl-3;
+    @apply font-bold text-white text-xl sm:text-2xl tracking-normal mt-8 mb-3 border-l-4 border-[#FF5A2F] pl-3;
   }
   .text-format-legal p {
     @apply text-stone-300 leading-7 font-normal text-sm sm:text-base mb-4 tracking-normal;
@@ -249,7 +258,7 @@
     @apply font-semibold text-white;
   }
   .text-format-legal a {
-    @apply font-semibold text-red-400 hover:text-red-300 transition-colors underline underline-offset-2;
+    @apply font-semibold text-[#FF5A2F] hover:text-[#FF6A35] transition-colors underline underline-offset-2;
   }
 }
 

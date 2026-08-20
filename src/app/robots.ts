@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.dooriptv.shop/sitemap.xml',
+    sitemap: 'https://www.omniptv4k.shop/sitemap.xml',
   };
 }

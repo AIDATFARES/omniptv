@@ -16,28 +16,28 @@ const reviewImages = [
 const metrics = [
   { icon: Star, value: "4.9 / 5.0", label: "Average rating", tone: "text-amber-300" },
   { icon: Users, value: "14K+", label: "Happy customers", tone: "text-blue-300" },
-  { icon: Tv, value: "50K+", label: "Live channels", tone: "text-red-300" },
-  { icon: Globe2, value: "80+", label: "Countries supported", tone: "text-red-300" },
+  { icon: Tv, value: "50K+", label: "Live channels", tone: "text-[#E83E59]" },
+  { icon: Globe2, value: "80+", label: "Countries supported", tone: "text-[#E83E59]" },
   { icon: RefreshCw, value: "94%", label: "Renewal rate", tone: "text-pink-300" },
 ];
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative z-10 overflow-hidden bg-[#0c0f0f] py-24 sm:py-28">
+    <section className="relative z-10 overflow-hidden bg-[#050607] py-24 sm:py-28">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_22%_36%,rgba(92,49,153,0.12),transparent_28%),radial-gradient(ellipse_at_76%_52%,rgba(30,94,185,0.09),transparent_28%)]" />
       <div className="relative">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-400/[0.06] px-4 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.15em] text-amber-300">
-            <Trophy className="h-3 w-3" /> Verified IPTVDoor reviews
+            <Trophy className="h-3 w-3" /> Verified OmniPtv reviews
           </span>
           <h2 className="mt-6 text-4xl font-black uppercase leading-[0.98] tracking-tight text-white sm:text-5xl animate-fade-up">
             <span className="block">Real Reviews from</span>
-            <span className="mt-1 block bg-gradient-to-r from-red-400 via-red-400 to-red-400 bg-clip-text text-transparent">
-              IPTVDoor Subscribers
+            <span className="mt-1 block text-gradient-primary">
+              OmniPtv Subscribers
             </span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-stone-400 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Discover why viewers around the world choose IPTVDoor for reliable live channels, movies, series, and responsive support.
+            Discover why viewers around the world choose OmniPtv for reliable live channels, movies, series, and responsive support.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
               >
                 <Image
                   src={`/reviews/${img}`}
-                  alt="IPTVDoor Customer Review"
+                  alt="OmniPtv Customer Review"
                   fill
                   sizes="(max-width: 640px) 220px, 280px"
                   className="object-contain group-hover:scale-105 transition-transform duration-300"
@@ -85,10 +85,10 @@ export default function TestimonialsSection() {
 
         <div className="mt-12 text-center animate-fade-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
           <a
-            href="https://wa.me/213552069874?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20iptvdoor%20IPTV."
+            href="https://wa.me/213552069874?text=Hello%2C%20I%20would%20like%20a%20free%20trial%20for%20OmniPtv%20IPTV."
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-red-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(211,47,47,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF5A2F] to-red-600 px-7 py-4 text-sm font-extrabold text-white shadow-[0_0_28px_rgba(255,90,47,0.42)] transition-transform hover:-translate-y-0.5 hover:scale-105"
           >
             <Trophy className="h-4 w-4" /> Get Your Free Trial
           </a>
@@ -97,10 +97,10 @@ export default function TestimonialsSection() {
               <Headphones className="h-3 w-3 text-emerald-400" /> Instant WhatsApp delivery
             </span>
             <span className="flex items-center gap-1.5">
-              <Tv className="h-3 w-3 text-red-300" /> Works on all devices
+              <Tv className="h-3 w-3 text-[#E83E59]" /> Works on all devices
             </span>
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="h-3 w-3 text-red-300" /> 99.9% uptime guaranteed
+              <ShieldCheck className="h-3 w-3 text-[#E83E59]" /> 99.9% uptime guaranteed
             </span>
           </div>
         </div>

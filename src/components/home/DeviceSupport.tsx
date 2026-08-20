@@ -4,18 +4,18 @@ import Link from "next/link";
 
 export default function DeviceSupport() {
   return (
-    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-y border-white/10 overflow-hidden">
+    <section className="py-20 bg-[#050607] text-white relative z-10 border-y border-white/10 overflow-hidden">
       <div className="max-w-[1320px] mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-3 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#FF5A2F] mb-3 block">
             MULTI-DEVICE COMPATIBILITY
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Our IPTV service supports{" "}
             <Link
               href="/installation"
-              className="text-[#d32f2f] hover:text-red-400 transition-colors"
+              className="text-[#FF5A2F] hover:text-[#FF6A35] transition-colors"
             >
               all your favorite devices
             </Link>
@@ -42,7 +42,7 @@ export default function DeviceSupport() {
           <div className="space-y-8 w-full">
             {/* Item 1 */}
             <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#FF5A2F] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
                 <Check className="h-4 w-4 stroke-[3]" />
               </div>
               <div className="flex-1 min-w-0">
@@ -53,7 +53,7 @@ export default function DeviceSupport() {
                   You can use Our Server services on all Smart Phones & TVs, Android Box, and all devices that can play IPTV powered with different OS (Android, iOS, Windows & ...) via{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     our installation guide
                   </Link>
@@ -64,7 +64,7 @@ export default function DeviceSupport() {
 
             {/* Item 2 */}
             <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#FF5A2F] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
                 <Check className="h-4 w-4 stroke-[3]" />
               </div>
               <div className="flex-1 min-w-0">
@@ -75,7 +75,7 @@ export default function DeviceSupport() {
                   Just send us your Mac Address related to your MAG Device or your Mag simulator (like STB). We send you Mag portal and you have access to our{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     channels playlist
                   </Link>
@@ -86,7 +86,7 @@ export default function DeviceSupport() {
 
             {/* Item 3 */}
             <div className="flex gap-4 items-start group w-full">
-              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#d32f2f] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
+              <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-[#FF5A2F] group-hover:text-white transition-colors duration-300 border border-emerald-500/30">
                 <Check className="h-4 w-4 stroke-[3]" />
               </div>
               <div className="flex-1 min-w-0">
@@ -97,7 +97,7 @@ export default function DeviceSupport() {
                   Our Server service is flexible and you can play line on almost all digital devices. You can install an{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     IPTV player
                   </Link>{" "}

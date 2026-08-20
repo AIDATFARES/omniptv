@@ -3,24 +3,24 @@ import Link from "next/link";
 
 export default function HowItWorksSection() {
   return (
-    <section className="py-20 bg-[#0c0f0f] text-white relative z-10 border-b border-white/10 overflow-hidden">
+    <section className="py-20 bg-[#050607] text-white relative z-10 border-b border-white/10 overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-6">
 
         {/* ========================================================================= */}
-        {/* PART 1: How does it work? IPTVDoor Timeline */}
+        {/* PART 1: How does it work? OmniPtv Timeline */}
         {/* ========================================================================= */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#d32f2f] mb-2 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#FF5A2F] mb-2 block">
             EASY 3-STEP PROCESS
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-            How does it work? IPTVDoor
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#FF5A2F] tracking-tight">
+            How does it work? OmniPtv
           </h2>
           <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto">
             Get your{" "}
             <a
               href="#pricing"
-              className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors cursor-pointer"
+              className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors cursor-pointer"
             >
               IPTV subscription
             </a>{" "}
@@ -37,16 +37,16 @@ export default function HowItWorksSection() {
           <div className="relative mb-16 md:mb-20">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF5A2F] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,90,47,0.6)]">
                 Step One
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="glass-panel text-white p-8 rounded-2xl shadow-xl relative border border-white/10"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF5A2F] mb-3">
                   <a
                     href="#pricing"
                     className="hover:text-red-700 transition-colors cursor-pointer"
@@ -54,18 +54,18 @@ export default function HowItWorksSection() {
                     Place your order.
                   </a>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
+                <p className="text-stone-400 text-sm leading-relaxed">
                   After placing your order from our{" "}
                   <a
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors cursor-pointer"
+                    className="text-[#FF5A2F] font-semibold hover:text-red-700 transition-colors cursor-pointer"
                   >
                     pricing plans
                   </a>
                   , you will receive your subscription details within 20 minutes at most by email or{" "}
                   <Link
                     href="/contact"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-red-700 transition-colors"
                   >
                     WhatsApp
                   </Link>
@@ -91,7 +91,7 @@ export default function HowItWorksSection() {
           <div className="relative mb-16 md:mb-20">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF5A2F] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,90,47,0.6)]">
                 Step Two
               </span>
             </div>
@@ -111,9 +111,9 @@ export default function HowItWorksSection() {
               </div>
 
               {/* Right Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200 order-1 md:order-2"
+              <div className="glass-panel text-white p-8 rounded-2xl shadow-xl relative border border-white/10 order-1 md:order-2"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF5A2F] mb-3">
                   <Link
                     href="/installation"
                     className="hover:text-red-700 transition-colors"
@@ -121,11 +121,11 @@ export default function HowItWorksSection() {
                     Installation & Setup
                   </Link>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
+                <p className="text-stone-400 text-sm leading-relaxed">
                   Follow our step-by-step{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-red-700 transition-colors"
                   >
                     installation guide
                   </Link>{" "}
@@ -139,16 +139,16 @@ export default function HowItWorksSection() {
           <div className="relative">
             {/* Step Badge */}
             <div className="md:absolute md:left-1/2 md:-translate-x-1/2 md:-top-4 z-20 flex justify-center mb-6 md:mb-0">
-              <span className="bg-[#d32f2f] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(211,47,47,0.6)]">
+              <span className="bg-[#FF5A2F] text-white font-extrabold text-xs uppercase tracking-wider px-5 py-1.5 rounded-full shadow-[0_0_15px_rgba(255,90,47,0.6)]">
                 Step Three
               </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-6">
               {/* Left Card */}
-              <div className="bg-white text-stone-900 p-8 rounded-2xl shadow-xl relative border border-stone-200"
+              <div className="glass-panel text-white p-8 rounded-2xl shadow-xl relative border border-white/10"
               >
-                <h3 className="text-xl font-extrabold text-[#d32f2f] mb-3">
+                <h3 className="text-xl font-extrabold text-[#FF5A2F] mb-3">
                   <Link
                     href="/channels"
                     className="hover:text-red-700 transition-colors"
@@ -156,11 +156,11 @@ export default function HowItWorksSection() {
                     Watch and enjoy.
                   </Link>
                 </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
+                <p className="text-stone-400 text-sm leading-relaxed">
                   Stream all your favorite live sports, 4K movies, and premium channels from our complete{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-700 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-red-700 transition-colors"
                   >
                     channels catalog
                   </Link>
@@ -185,18 +185,18 @@ export default function HowItWorksSection() {
         </div>
 
         {/* ========================================================================= */}
-        {/* PART 2: Getting Started with IPTVDoor Is Easy */}
+        {/* PART 2: Getting Started with OmniPtv Is Easy */}
         {/* ========================================================================= */}
         <div className="pt-10 border-t border-white/10">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#d32f2f] tracking-tight">
-              Getting Started with IPTVDoor Is Easy
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#FF5A2F] tracking-tight">
+              Getting Started with OmniPtv Is Easy
             </h2>
             <p className="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
-              Enjoy high quality IPTV streaming with IPTVDoor. Watch{" "}
+              Enjoy high quality IPTV streaming with OmniPtv. Watch{" "}
               <Link
                 href="/channels"
-                className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
               >
                 live TV channels
               </Link>
@@ -220,10 +220,10 @@ export default function HowItWorksSection() {
               </div>
               <div className="space-y-4"
               >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#FF5A2F] leading-snug">
                   <a
                     href="#pricing"
-                    className="hover:text-red-400 transition-colors cursor-pointer"
+                    className="hover:text-[#FF6A35] transition-colors cursor-pointer"
                   >
                     We Offer You A Complete IPTV Subscription Experience
                   </a>
@@ -232,14 +232,14 @@ export default function HowItWorksSection() {
                   Enjoy uninterrupted IPTV 4K/HD with an{" "}
                   <a
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors cursor-pointer"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors cursor-pointer"
                   >
                     IPTV subscription
                   </a>{" "}
-                  from IPTVDoor. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
+                  from OmniPtv. Choose from 1, 3, 6 or 12 months packages and experience continuous entertainment with full access to our{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     streaming library
                   </Link>
@@ -252,10 +252,10 @@ export default function HowItWorksSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="space-y-4 order-2 md:order-1"
               >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#FF5A2F] leading-snug">
                   <Link
                     href="/channels"
-                    className="hover:text-red-400 transition-colors"
+                    className="hover:text-[#FF6A35] transition-colors"
                   >
                     +50,000 Channels & 200,000+ VODs With Our IPTV Smarters Pro
                   </Link>
@@ -264,14 +264,14 @@ export default function HowItWorksSection() {
                   Unlock a world of entertainment with over{" "}
                   <Link
                     href="/channels"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     +50,000 live channels and +120,000 films & series
                   </Link>{" "}
                   for the ultimate viewing experience. Check out our{" "}
                   <a
                     href="#pricing"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors cursor-pointer"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors cursor-pointer"
                   >
                     subscription plans
                   </a>{" "}
@@ -305,26 +305,26 @@ export default function HowItWorksSection() {
               </div>
               <div className="space-y-4"
               >
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#d32f2f] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#FF5A2F] leading-snug">
                   <Link
                     href="/installation"
-                    className="hover:text-red-400 transition-colors"
+                    className="hover:text-[#FF6A35] transition-colors"
                   >
                     Live TV With IPTV Smarters Pro and TV Guide (EPG)
                   </Link>
                 </h3>
                 <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-                  With IPTVDoor you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
+                  With OmniPtv you get access to an interactive TV guide (EPG), Live TV, and replay options. Read our{" "}
                   <Link
                     href="/installation"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     IPTV setup guide
                   </Link>{" "}
                   or explore our{" "}
                   <Link
                     href="/faq"
-                    className="text-[#d32f2f] font-semibold hover:text-red-400 transition-colors"
+                    className="text-[#FF5A2F] font-semibold hover:text-[#FF6A35] transition-colors"
                   >
                     FAQ support
                   </Link>{" "}
