@@ -41,6 +41,13 @@ export default function MovieStrips() {
         </Link>
       </div>
 
+      {/* Top Strip Title */}
+      <div className="text-center z-10 relative mb-4">
+        <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide">
+          Latest Blockbuster Movies
+        </h3>
+      </div>
+
       {/* Top Strip (Right to Left) */}
       <div className="relative flex w-max items-center">
         <div className="flex gap-4 md:gap-6 px-2 md:px-3 animate-marquee" style={{ animationDuration: '50s' }}>
@@ -53,10 +60,10 @@ export default function MovieStrips() {
       </div>
 
       {/* Middle Text */}
-      <div className="text-center z-10 relative my-2">
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide">
+      <div className="text-center z-10 relative my-6">
+        <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide">
           4K Image Film Source
-        </h2>
+        </h3>
       </div>
 
       {/* Bottom Strip (Left to Right) */}

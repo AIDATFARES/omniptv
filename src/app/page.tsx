@@ -29,6 +29,11 @@ export default function Home() {
       <BrandMarquee />
       <TopFeatureBar />
       <MovieStrips />
+      <div className="w-full bg-[#050607] pt-12 pb-2">
+        <h3 className="text-center text-xl md:text-2xl font-bold text-white tracking-wide">
+          Live Premium Sports
+        </h3>
+      </div>
       <BrandMarquee 
         imagesFolder="dawryate" 
         images={["1235.webp", "1727368362913.webp", "1727368362933.webp", "1727368362971.webp", "ff25.webp"]}
