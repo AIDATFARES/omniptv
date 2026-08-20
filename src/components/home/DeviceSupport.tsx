@@ -28,10 +28,10 @@ export default function DeviceSupport() {
           <div className="flex items-center justify-center w-full">
             <div className="relative w-full max-w-[550px] p-3 bg-white/5 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md">
               <Image
-                src="/setup-illustration.webp"
+                src="/devices-support.webp"
                 alt="Supported IPTV Devices"
-                width={700}
-                height={500}
+                width={1024}
+                height={350}
                 sizes="(max-width: 768px) 100vw, 550px"
                 className="w-full h-auto object-contain rounded-2xl"
               />
