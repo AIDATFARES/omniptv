@@ -12,10 +12,9 @@ export default function HeroSection() {
           src="/hero-family-bg.png"
           alt="OmniPtv Background"
           fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-[#050607]/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050607] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050607] via-[#050607]/40 to-[#050607]/10" />
       </div>
 
       <div className="relative z-10 max-w-[1100px] mx-auto px-6 flex flex-col items-center gap-5 pt-0 -mt-2 sm:-mt-4">
