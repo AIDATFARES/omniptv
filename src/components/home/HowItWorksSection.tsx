@@ -77,7 +77,7 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
               >
                 <Image
-                  src="/place-your-order.webp"
+                  src="/place-your-order-v2.png"
                   alt="Place your order online"
                   width={600}
                   height={380}
@@ -101,11 +101,10 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl order-2 md:order-1"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                  src="/installation-setup.png"
                   alt="Instant installation"
                   width={600}
                   height={380}
-                  unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -172,11 +171,10 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80"
+                  src="/watch-enjoy.png"
                   alt="Watch and enjoy live TV"
                   width={600}
                   height={380}
-                  unoptimized
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -210,11 +208,10 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80"
+                  src="/complete-experience.png"
                   alt="Complete IPTV Subscription Experience"
                   width={600}
                   height={400}
-                  unoptimized
                   className="w-full h-72 object-cover"
                 />
               </div>
@@ -281,7 +278,7 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5 order-1 md:order-2"
               >
                 <Image
-                  src="/sport-banner.webp"
+                  src="/sport-banner-v2.png"
                   alt="+50,000 Live Channels & VODs"
                   width={600}
                   height={400}
@@ -295,11 +292,10 @@ export default function HowItWorksSection() {
               <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-white/5"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                  src="/epg-guide.png"
                   alt="Live TV and TV Guide EPG"
                   width={600}
                   height={400}
-                  unoptimized
                   className="w-full h-72 object-cover"
                 />
               </div>
