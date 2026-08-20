@@ -26,6 +26,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `/blog/${post.slug}`,
+      images: [
+        {
+          url: post.coverImage || '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ],
+      type: 'article',
+      publishedTime: post.date,
+    }
   };
 }
 
