@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | OmniPtv",
-  description: "Learn how OmniPtv collects, uses, and protects personal information.",
+  title: "Privacy Policy & Data Protection | OmniPtv",
+  description: "Review the OmniPtv privacy policy to understand how we securely collect, use, and protect your personal information while you enjoy our IPTV service.",
   alternates: {
     canonical: "/privacy-policy",
   },

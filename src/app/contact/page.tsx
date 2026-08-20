@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center mb-md">
               <Mail className="text-primary w-8 h-8" />
             </div>
-            <h3 className="font-title-md text-title-md text-on-surface mb-xs">Email Us</h3>
+            <h2 className="font-title-md text-title-md text-on-surface mb-xs">Email Us</h2>
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">For general inquiries and support.</p>
             <a
               className="text-primary font-medium hover:text-primary-fixed transition-colors"
@@ -37,7 +37,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center mb-md">
               <MessageCircle className="text-emerald-400 w-8 h-8" />
             </div>
-            <h3 className="font-title-md text-title-md text-on-surface mb-xs">WhatsApp Support</h3>
+            <h2 className="font-title-md text-title-md text-on-surface mb-xs">WhatsApp Support</h2>
             <p className="font-body-sm text-body-sm text-on-surface-variant mb-md">
               Fastest way to reach us for technical issues.
             </p>
@@ -55,7 +55,7 @@ export default function Contact() {
             <div className="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-md">
               <Clock className="text-on-surface-variant w-8 h-8" />
             </div>
-            <h3 className="font-title-md text-title-md text-on-surface mb-xs">Response Time</h3>
+            <h2 className="font-title-md text-title-md text-on-surface mb-xs">Response Time</h2>
             <p className="font-body-sm text-body-sm text-on-surface-variant">
               We typically reply in <strong className="text-on-surface">Under 2 hours</strong> during standard business hours.
             </p>

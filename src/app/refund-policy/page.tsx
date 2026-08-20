@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Refund Policy | OmniPtv",
-  description: "Learn about the refund policy, eligibility, and process for OmniPtv.",
+  description: "Read the OmniPtv refund and cancellation policy. We strive for 100% customer satisfaction with our premium IPTV service.",
   alternates: {
     canonical: "/refund-policy",
   },

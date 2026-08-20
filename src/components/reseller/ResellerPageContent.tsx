@@ -325,10 +325,10 @@ export default function ResellerPageContent() {
                     onClick={() => toggleFaq(index)}
                     className="flex w-full items-center justify-between px-6 py-4 text-left font-bold text-white transition-colors hover:glass-panel/[0.03]"
                   >
-                    <span className="text-sm sm:text-base tracking-wide uppercase font-extrabold flex items-center gap-3">
+                    <h3 className="text-sm sm:text-base tracking-wide uppercase font-extrabold flex items-center gap-3">
                       <span className="text-[#FF5A2F]">▶</span>
                       {faq.question}
-                    </span>
+                    </h3>
                     {isOpen ? (
                       <ChevronUp className="h-5 w-5 shrink-0 text-[#FF5A2F]" />
                     ) : (

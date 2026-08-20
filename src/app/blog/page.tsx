@@ -70,9 +70,9 @@ export default function Blog() {
                 </span>
               </div>
               <div className="p-6 flex flex-col flex-grow bg-surface-container-lowest/50">
-                <p className="font-title-md text-title-md text-on-surface mb-3 group-hover:text-primary transition-colors">
+                <h2 className="font-title-md text-title-md text-on-surface mb-3 group-hover:text-primary transition-colors">
                   {post.title}
-                </p>
+                </h2>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">
                   {post.description}
                 </p>

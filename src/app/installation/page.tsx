@@ -4,6 +4,8 @@ import DeviceSetupGuide from "@/components/installation/DeviceSetupGuide";
 import { Clock3, Download, Headphones, Link2, Monitor, PlayCircle } from "lucide-react";
 
 export const metadata = {
+  title: "How to Install IPTV on Any Device – Easy Setup Guide | OmniPtv",
+  description: "Learn how to quickly set up OmniPtv on Smart TV, Firestick, Android, iOS and MAG. Follow our simple step-by-step installation guide and start streaming today!",
   alternates: {
     canonical: "/installation",
   },

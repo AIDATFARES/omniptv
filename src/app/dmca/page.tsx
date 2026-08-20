@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Legal Disclaimer & DMCA | OmniPtv",
-  description: "Legal Disclaimer and DMCA policy for OmniPtv.",
+  description: "Read the OmniPtv legal disclaimer and DMCA policy regarding our IPTV service. We respect copyright and intellectual property rights.",
   alternates: {
     canonical: "/dmca",
   },

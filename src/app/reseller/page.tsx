@@ -1,9 +1,8 @@
 import ResellerPageContent from "@/components/reseller/ResellerPageContent";
 
 export const metadata = {
-  title: "Become an IPTV Reseller | Start Your IPTV Business - OmniPtv",
-  description:
-    "Join the OmniPtv Reseller Program. High-margin IPTV reseller panel, custom credit packages, sub-reseller management, and 24/7 dedicated support.",
+  title: "Build Your IPTV Reseller Business – High-Margin Plans | OmniPtv",
+  description: "Start your profitable IPTV reseller business today. Enjoy high margins, a powerful management panel, instant setup and flexible credit packages. Get started now!",
   alternates: {
     canonical: "/reseller",
   },
