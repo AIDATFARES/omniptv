@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-custom-bg.webp"
+          src="/hero-family-bg.png"
           alt="OmniPtv Background"
           fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
