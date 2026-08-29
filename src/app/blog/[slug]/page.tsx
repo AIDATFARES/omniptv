@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArrowLeft } from "lucide-react";
 import ArticleFAQAccordion from "@/components/blog/ArticleFAQAccordion";
+import BlogOfferCard from "@/components/blog/BlogOfferCard";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -70,6 +71,19 @@ function parseArticleContent(content: string) {
   return { beforeFaq, faqs: faqItems, afterFaq };
 }
 
+function parseCTAs(content: string) {
+  const parts = content.split(/\[\[CTA_CARD_1\]\]|\[\[CTA_CARD_2\]\]/);
+  const hasCTA1 = content.includes("[[CTA_CARD_1]]");
+  const hasCTA2 = content.includes("[[CTA_CARD_2]]");
+  return {
+    part1: parts[0] || "",
+    part2: parts[1] || "",
+    part3: parts[2] || "",
+    hasCTA1,
+    hasCTA2
+  };
+}
+
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
@@ -79,6 +93,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   const { beforeFaq, faqs, afterFaq } = parseArticleContent(post.content);
+  const ctaParsed = parseCTAs(beforeFaq);
 
   const faqJsonLd = faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -175,8 +190,38 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           prose-td:border-b prose-td:border-outline-variant/50 prose-td:py-2"
         >
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
-            {beforeFaq}
+            {ctaParsed.part1}
           </ReactMarkdown>
+
+          {ctaParsed.hasCTA1 && (
+            <BlogOfferCard 
+              title="Test the Best IPTV Service" 
+              description="Not sure if OmniPTV is right for you? Try our premium 4K streaming service completely risk-free." 
+              buttonText="Start Free Trial" 
+              buttonLink="https://wa.me/213552069874?text=Hello%2C%20I%20would%20like%20to%20request%20a%20free%20IPTV%20trial." 
+            />
+          )}
+
+          {ctaParsed.part2 && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+              {ctaParsed.part2}
+            </ReactMarkdown>
+          )}
+
+          {ctaParsed.hasCTA2 && (
+            <BlogOfferCard 
+              title="Upgrade Your Entertainment" 
+              description="Get access to over 25,000 live channels and 130,000+ VODs. Instant activation on all devices." 
+              buttonText="View Pricing Plans" 
+              buttonLink="/pricing" 
+            />
+          )}
+
+          {ctaParsed.part3 && (
+            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+              {ctaParsed.part3}
+            </ReactMarkdown>
+          )}
 
           {faqs.length > 0 && (
             <div className="mt-12 mb-8">
